@@ -3,21 +3,58 @@
 
 {% block content %}
 
-<div class="hero">
+<div class="hero-banner">
 
-    <div class="hero-content">
+    <div class="hero-overlay">
 
-        <img src="{% static 'userprofile/images/profile.jpg' %}" class="profile-img">
+        <div class="hero-content">
 
-        <h1>Hello, I'm {{ profile.name }}</h1>
+            <img src="{% static 'userprofile/images/profile.jpg' %}" class="profile-img">
 
-        <h3>{{ profile.title }}</h3>
+            <h1>{{ profile.name }}</h1>
+            <h3>{{ profile.title }}</h3>
 
-        <p>{{ profile.bio }}</p>
+            <!-- INTRO TEXT (RESTORED ✅) -->
+            <p class="hero-intro">
+                I am an Information Technology graduate passionate about building digital solutions, 
+                supporting business systems, and driving innovation through technology and entrepreneurship.
+            </p>
 
-        <div class="hero-buttons">
-            <a href="/projects/" class="btn">View My Projects</a>
-            <a href="/contact/" class="btn secondary">Contact Me</a>
+            <!-- ORGANIZED PROFILE DETAILS -->
+            <div class="profile-grid">
+
+                <div class="profile-item">
+                    <strong>Gender</strong>
+                    <span>Male</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Education</strong>
+                    <span>Bachelor’s in IT</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Location</strong>
+                    <span>Arua, Uganda</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Phone</strong>
+                    <span>0762286205</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Email</strong>
+                    <span>mulabizajuma90@gmail.com</span>
+                </div>
+
+            </div>
+
+            <div class="hero-buttons">
+                <a href="/projects/" class="btn">View Projects</a>
+                <a href="/contact/" class="btn secondary">Contact Me</a>
+            </div>
+
         </div>
 
     </div>
