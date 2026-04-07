@@ -1,0 +1,42 @@
+{% extends 'userprofile/base.html' %}
+
+{% block content %}
+
+<h2 style="text-align:center;">Contact Me</h2>
+
+<div class="contact-container">
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+
+        <p>📞 Phone: 0762286205 / 0705053232</p>
+        <p>💬 WhatsApp: 0762286205</p>
+        <p>📧 Email: mulabizajuma90@gmail.com</p>
+
+        <h3>Follow Me</h3>
+
+        <p><i class="fa fa-phone"></i> 0762286205</p>
+<p><i class="fa fa-envelope"></i> mulabizajuma90@gmail.com</p>
+<p><i class="fab fa-facebook"></i> Facebook</p>
+<p><i class="fab fa-instagram"></i> Instagram</p>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

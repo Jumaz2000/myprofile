@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    padding: 15px 40px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+/* CONTAINER */
+.container {
+    padding: 40px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid darkblue;
+}
+
+/* PROJECT IMAGE */
+.project-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid darkblue;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* PROJECT GRID */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT 🔥 */
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* PROJECT IMAGE */
+.project-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid darkblue;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+/* HERO TEXT */
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: navy;
+}
+
+.btn.secondary {
+    background-color: gray;
+}
+
+/* SKILLS BADGES */
+.skills-container {
+    margin-top: 10px;
+}
+
+.skill-badge {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT 🔥 */
+.skill-badge:hover {
+    background-color: navy;
+    transform: scale(1.05);
+}
+
+/* CONTACT PAGE */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-form {
+    width: 60%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: navy;
+}
