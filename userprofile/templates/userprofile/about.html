@@ -6,26 +6,78 @@
 
 <div class="card">
     <h3>🎓 Education</h3>
-    {% for edu in education %}
-        <p>{{ edu.degree }} - {{ edu.institution }} ({{ edu.year }})</p>
-    {% endfor %}
+
+    <div class="edu-grid">
+
+        {% for edu in education %}
+        <div class="edu-card">
+            <i class="fas fa-graduation-cap"></i>
+
+            <h4>{{ edu.degree }}</h4>
+            <p>{{ edu.institution }}</p>
+            <span class="year">{{ edu.year }}</span>
+        </div>
+        {% endfor %}
+
+    </div>
 </div>
 
 <div class="card">
     <h3>💼 Work Experience</h3>
-    {% for exp in experience %}
-        <p>{{ exp.role }} at {{ exp.company }} ({{ exp.duration }})</p>
-    {% endfor %}
+
+    <div class="exp-grid">
+
+        {% for exp in experience %}
+        <div class="exp-card">
+            <i class="fas fa-briefcase"></i>
+
+            <h4>{{ exp.role }}</h4>
+            <p>{{ exp.company }}</p>
+            <span class="year">{{ exp.duration }}</span>
+        </div>
+        {% endfor %}
+
+    </div>
 </div>
 
 <div class="card">
     <h3>🛠 Skills</h3>
 
-    <div class="skills-container">
-        {% for skill in skills %}
-            <span class="skill-badge">{{ skill.name }}</span>
-        {% endfor %}
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h4>IT & Technical Support</h4>
+            <p>System troubleshooting, IT support, Microsoft Office & Google Workspace.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-folder-open"></i>
+            <h4>Administration & Records</h4>
+            <p>Data entry, documentation, records management, statutory compliance.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>Finance & Operations</h4>
+            <p>Basic accounting, cash handling, expense tracking, inventory control.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-users"></i>
+            <h4>Customer Service</h4>
+            <p>Client management, communication, and service delivery excellence.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-user-tie"></i>
+            <h4>Leadership & Teamwork</h4>
+            <p>Leadership, teamwork, organization, and multitasking skills.</p>
+        </div>
+
     </div>
+
+</div>
 
 </div>
 
